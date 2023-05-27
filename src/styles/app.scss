@@ -1,2 +1,158 @@
 @import 'utils/variables';
 @import 'components/type';
+@import 'desktop/desktop';
+
+@media screen and (max-width: 600px) {
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #18171A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: 0.3s transform ease-in-out;
+
+    
+        &__links {
+            flex-direction: column;
+            align-items: flex-start;
+            list-style: none;
+
+            &__el a {
+                color: white;
+                text-decoration: none;
+                margin-bottom: 16px;
+                font-size: 28px;
+                font-weight: 800;
+                font-family: "syne", sans-serif;
+            }
+        }
+  }
+
+   .header__nav.open {
+     display: block;
+     transform: initial;
+   }
+   .header__nav--burger {
+     display: flex;
+     flex-direction: row-reverse;
+     cursor: pointer;
+     img {
+         padding: 16px;
+     }
+ }
+
+   .header__nav--closeburger {
+     display: block;
+     cursor: pointer;
+     img {
+         position: absolute;
+         top: 16px;
+         right: 16px;
+     }
+   }
+
+   .section--1 {
+    border: solid red 1px;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+ }
+
+    .logo {
+        width: 368px;
+    }
+
+    .container--scroll {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        bottom: 0;
+        margin-bottom: 64px;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .scroll--text {
+        position: absolute;
+        margin-top: 24px;
+    }
+
+    .container__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        > *:nth-child(1) {
+            height: 295px;
+        }
+
+        > *:nth-child(2) {
+            margin-top: 32px;
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
