@@ -45,7 +45,9 @@ h1, h2, h3, h4 {
 }
 
 p {
-  max-width: 50%;
+  max-width: 100%;
+  margin-left: 16px;
+  line-height: 32px;
 }
 
 .sections {
@@ -61,6 +63,7 @@ p {
 }
 .title__big {
   font-size: 38px;
+  margin-bottom: 64px;
   text-transform: uppercase;
 }
 .title__medium {
@@ -71,6 +74,13 @@ p {
 }
 .title__gems {
   width: 21px;
+}
+
+.paragraph__big__bold {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 @media screen and (min-width: 600px) {
@@ -147,7 +157,6 @@ p {
     right: 16px;
   }
   .section--1 {
-    border: solid red 1px;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -156,7 +165,7 @@ p {
     position: relative;
   }
   .logo {
-    width: 368px;
+    max-width: 350px;
   }
   .container--scroll {
     width: 100%;
@@ -178,13 +187,71 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .container__center > *:nth-child(1) {
     height: 295px;
   }
   .container__center > *:nth-child(2) {
     margin-top: 32px;
+    height: 64px;
+    width: 64px;
+  }
+  .container__center > *:nth-child(4) {
+    z-index: -1;
+    margin-top: 405px;
+    position: absolute;
+    rotate: 6deg;
+    width: 369px;
     height: 32px;
-    width: 32px;
+    border: 1px solid #FF2F61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+  }
+  .fade--bottom {
+    font-size: 0;
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+    height: 32px;
+    background: linear-gradient(to bottom, transparent, #FF2F61);
+  }
+  .background--pink {
+    width: calc(100% + 32px);
+    margin: -16px;
+    background-color: #FF2F61;
+  }
+  .background--pink p {
+    padding-top: 32px;
+  }
+  .paragraph__big__circle {
+    margin: 40px -32px;
+    position: absolute;
+    font-size: 0;
+    border: 1px solid #18171A;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 369px;
+    height: 216px;
+    rotate: -12deg;
+    z-index: 1;
+  }
+  .paragraph__big__circle__2 {
+    margin: 40px -32px;
+    position: absolute;
+    font-size: 0;
+    border: 1px solid #18171A;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 369px;
+    height: 216px;
+    rotate: -3deg;
+    z-index: 1;
+  }
+  .barcode {
+    display: flex;
+    justify-content: right;
+    margin-right: 32px;
+    padding-bottom: 64px;
   }
 }/*# sourceMappingURL=app.css.map */

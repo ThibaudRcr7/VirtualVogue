@@ -48,7 +48,9 @@ h1,h2,h3,h4 {
 }
 
 p {
-  max-width: 50%;
+  max-width: 100%;
+  margin-left: 16px;
+  line-height: 32px;
 }
 
 .sections {
@@ -65,6 +67,7 @@ p {
 
   &__big {
     font-size: 38px;
+    margin-bottom: 64px;
     text-transform: uppercase;
   }
 
@@ -79,4 +82,11 @@ p {
   &__gems {
     width: 21px;
   }
+}
+
+.paragraph__big__bold {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 21px;
 }
