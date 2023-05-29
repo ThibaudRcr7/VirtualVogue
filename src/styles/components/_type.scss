@@ -67,11 +67,18 @@ p {
 
   &__big {
     font-size: 38px;
-    margin-bottom: 64px;
+    margin: 64px 0 32px 0;
+    line-height: 32px;
     text-transform: uppercase;
+    text-align: center;
+
+    &__pink {
+      color: #FF2F61;
+    }
   }
 
   &__medium {
+    max-width: 81%;
     font-size: 28px;
   }
 
@@ -81,12 +88,21 @@ p {
 
   &__gems {
     width: 21px;
+    margin-right: 4px;
   }
 }
 
-.paragraph__big__bold {
-  position: relative;
-  z-index: 2;
-  font-weight: bold;
+.paragraph__big {
   font-size: 21px;
+
+  &__bold {
+    position: relative;
+    font-size: 21px;
+    z-index: 2;
+    font-weight: bold;
+
+  }
+}
+.paragraph__bold {
+  font-weight: bold;
 }
