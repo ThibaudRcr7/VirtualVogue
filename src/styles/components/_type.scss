@@ -7,7 +7,7 @@ body {
   font-family: "poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.333;
   background-color: #18171A;
   color: white;
@@ -24,7 +24,7 @@ body {
       position: absolute;
       background-repeat: repeat;
       background-image: url("../assets/images/grille-background.png");
-      opacity: 0.5;
+      opacity: 0.2;
       z-index: -1;
     }
 
@@ -50,25 +50,29 @@ h1,h2,h3,h4 {
 
 p {
   max-width: 100%;
-  margin-left: 16px;
   line-height: 32px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .sections {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .title {
   font-weight: bold;
 
   &__biggest {
-    font-size: 21px;
+    font-size: 1.333rem;
   }
 
   &__big {
-    font-size: 38px;
-    margin: 64px 0 32px 0;
+    font-size: 2.369rem;
+    margin: 0 0 2em 0;
     line-height: 32px;
     text-transform: uppercase;
     text-align: center;
@@ -80,25 +84,27 @@ p {
 
   &__medium {
     max-width: 81%;
-    font-size: 28px;
+    font-size: 1.777rem;
+    line-height: 32px;
+    margin-right: 1em;
   }
 
   &__little {
-    font-size: 21px;
+    font-size: 1.333rem;
   }
 
   &__gems {
-    width: 21px;
-    margin-right: 4px;
+    width: 16px;
+    margin-left: 0.25em;
   }
 }
 
 .paragraph__big {
-  font-size: 21px;
+  font-size: 1.333rem;
 
   &__bold {
     position: relative;
-    font-size: 21px;
+    font-size: 1.333rem;
     z-index: 2;
     font-weight: bold;
 

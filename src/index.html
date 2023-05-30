@@ -7,6 +7,7 @@
 
   <meta name="description" content="">
   <!-- Meta Partage -->
+  <a href="https://www.example.com/mon-media.jpg" target="_blank" rel="noopener noreferrer"></a>
   <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,23 +26,23 @@
       </div>
       <ul class="header__nav__links">
         <li class="header__nav__links__el">
-          <a href="#">Section 1</a>
+          <a href="#sec1">En Vogue</a>
           <div class="header__nav__circle">Circle</div>
         </li>
         <li class="header__nav__links__el">
-          <a href="#">Section 2</a>
+          <a href="#sec2">Son style</a>
           <div class="header__nav__circle">Circle</div>
         </li>
         <li class="header__nav__links__el">
-          <a href="#">Section 3</a>
+          <a href="#sec3">La solution</a>
           <div class="header__nav__circle">Circle</div>
         </li>
         <li class="header__nav__links__el">
-          <a href="#">Section 4</a>
+          <a href="#sec4">Ma passion</a>
           <div class="header__nav__circle">Circle</div>
         </li>
         <li class="header__nav__links__el">
-          <a href="#">Section 5</a>
+          <a href="#sec5">Mon ressenti</a>
           <div class="header__nav__circle">Circle</div>
         </li>
       </ul>
@@ -69,7 +70,7 @@
   <section class="sections section--2">
     <div class="container__center">
       <img src="assets/images/Perso-mobile.svg" alt="Buste personnage techwear">
-      <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
+      <img id="sec1" src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
       <h2 class="title__big">UN PROJET EN VOGUE</h2>
       <div class="title__big__circle">Circle</div>
     </div>
@@ -90,7 +91,7 @@
   
 
   <section class="sections section--3">
-    <h2 class="title__big">AVOIR SON PROPRE <span class="title__big__pink">STYLE</span></h2>
+    <h2  id="sec2" class="title__big">AVOIR SON PROPRE <span class="title__big__pink">STYLE</span></h2>
     <div class="container__title__medium">
       <h3 class="title__medium">L'importance de trouver son style</h3>
       <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
@@ -104,15 +105,16 @@
         <img class="planet__background" src="assets/images/Planet.svg" alt="Planète">
 
 
-        <div class="stats__block">
+        <div class="stats__block" id="statsBlock">
           <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
-            <svg>
-              <circle cx="115px" cy="115px" r="100px"></circle>
-            </svg>
-            <p class="stats__block__pourcents">70%</p>
-            <p class="stats__block__text">Prennent plus d’une heure à trouver un vêtement</p>
-            <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
+          <svg>
+            <circle cx="115px" cy="115px" r="100px"></circle>
+          </svg>
+          <p class="stats__block__pourcents">70%</p>
+          <p class="stats__block__text">Prennent plus d’une heure à trouver un vêtement</p>
+          <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
         </div>
+        
 
     <div class="container__title__medium">
       <h3 class="title__medium">Un problème commun</h3>
@@ -141,7 +143,7 @@
 
 
 
-  <section class="sections section--4">
+  <section  id="sec3"  class="sections section--4">
     <div class="container__center">
       <h2 class="title__big">UNE SOLUTION ADAPTéE</h2>
       <div class="title__big__circle">Circle</div>
@@ -195,13 +197,13 @@
           <div class="title__little__circle">Circle</div>
           <p>Après avoir terminé, l’utilisateur peut recommencer une création de tenue dans le même style ou dans un style différent afin d’en créer autant qu’il veut, il a aussi la possibilité de partager sa tenue avec le reste des utilisateurs du site et découvrir les créations des autres utilisateurs. Les créateurs de tenues pourront discuter sous forme de posts et commentaires de leurs tenues.</p>
         <h4 class="title__little">Guide</h4>
-          <div class="title__little__circle">Circle</div>
+          <div class="title__little__circle__2">Circle</div>
           <p>Un guide des bases de la mode sera disponible sur le site pour aider les utilisateurs à créer de belles tenues.</p>
   </section>
 
 
 
-  <section class="section section--5">
+  <section id="sec4" class="sections section--5">
     <h2 class="title__big">MON PROJET, <span class="title__big__pink">MA PASSION</span></h2>
 
     <div class="container__title__medium">
@@ -216,27 +218,35 @@
       <div class="barcode">
         <img src="assets/images/barcode.gif" alt="GIF-Barcode">
       </div>
-        <img src="assets/images/Planet.svg" alt="Planète">
+      <img class="planet__background" src="assets/images/Planet.svg" alt="Planète">
   </section>
 
 
-  <section class="sections section--6">
-    <h2 class="title__big">MON RESSENTI</h2>
+  <section id="sec5" class="sections section--6">
+    <div class="container__center">
+      <h2 class="title__big">MON RESSENTI</h2>
       <div class="title__big__circle">Circle</div>
+    </div>
+    <div class="container__title__medium">
       <h3 class="title__medium">Le début de la fin</h3>
         <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
         <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
         <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
         <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
         <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
+      </div>
         <p>Étant fortement attaché au domaine de la mode et ayant moi-même fait face à ce problème, j'ai orienté mes efforts vers une passion qui m'anime profondément. La mode représente bien plus qu'un simple intérêt pour moi. C'est un moyen d'expression individuel et un pilier de confiance en soi.</p>
         <p class="paragraph__big__bold">Ayant ressenti personnellement les frustrations de chercher en vain des vêtements qui correspondent à mes préférences, j'ai été motivé par l'idée de créer une solution à ce défi commun.</p>
           <div class="paragraph__big__circle">Circle</div>
-          <div class="paragraph__big__circle">Circle</div>
+          <div class="paragraph__big__circle__2">Circle</div>
+      <div class="barcode">
         <img src="assets/images/barcode.gif" alt="GIF-Barcode">
-        <img src="" alt="Vidéo-aperçu">
-        <div class="img_blur">Fond image flou</div>
+      </div>
+      <div class="center">
+        <img class="img__video" src="assets/images/Rectangle-video.svg" alt="Vidéo-aperçu">
+        <!-- <div class="img__blur">Fond image flou</div> -->
         <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
+      </div>
   </section>
 </main>
 
@@ -245,18 +255,31 @@
 <footer>
   <nav class="footer__nav">
     <ul class="footer__nav__links">
-      <li class="footer__nav__links__el">VirtualVogue</li>
-      <li class="footer__nav__links__el">Ui-kit</li>
-      <li class="footer__nav__links__el">Crédits</li>
-      <li class="footer__nav__links__el">Documentation</li>
+      <li class="footer__nav__links__el">
+        <a href="index.html"> <img src="assets/images/Title-logo.svg" alt=""></a>
+      </li>
+      <li class="footer__nav__links__el">
+        <a href="credits.html">Crédits</a>
+      </li>
+      <li class="footer__nav__links__el">
+        <a href="ui-kit.html">Ui-kit</a>
+      </li>
+      <li class="footer__nav__links__el">
+        <a href="#">Docs</a>
+      </li>
     </ul>
-    <img src="" alt="Icone Twitter">
-      <div class="footer__circle">Circle</div>
-    <img src="" alt="Icone Instagram">
-      <div class="footer__circle">Circle</div>
+    <div class="footer__icons">
+      <a href="https://twitter.com/Shino_DWT">
+        <img src="assets/images/Twitter.svg" alt="Icone Twitter">
+        <div class="footer__circle">Circle</div>
+      </a>
+      <a href="https://www.instagram.com/shino_dwt/">
+      <img src="assets/images/Insta.svg" alt="Icone Instagram">
+    </a>
+        <div class="footer__circle__2">Circle</div>
+    </div>
   </nav>
-  <img src="assets/images/Planet.svg" alt="Planète">
+  <img class="planet__background" src="assets/images/Planet.svg" alt="Planète">
 </footer>
-</div>
 </body>
 </html>

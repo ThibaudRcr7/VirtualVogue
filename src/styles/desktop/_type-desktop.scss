@@ -1,0 +1,20 @@
+@media screen and (min-width: 601px){
+
+body {
+    font-size: 28px;
+    line-height: 1.333;
+  
+      &::before{
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-repeat: repeat;
+        background-image: url("../assets/images/grille-background.png");
+        opacity: 0.2;
+        z-index: -1;
+        }
+    }
+}
