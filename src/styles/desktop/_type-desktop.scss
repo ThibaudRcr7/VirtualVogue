@@ -1,20 +1,99 @@
 @media screen and (min-width: 601px){
 
 body {
-    font-size: 28px;
-    line-height: 1.333;
+    font-size: 1.777rem;
+    line-height: 42px;
   
       &::before{
-        content: "";
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background-repeat: repeat;
-        background-image: url("../assets/images/grille-background.png");
-        opacity: 0.2;
-        z-index: -1;
+        background-image: url("../assets/images/grille-desktop.png");
+        opacity: 0.1;
         }
     }
+
+    p {
+      line-height: 42px;
+    }
+
+    .title {
+
+      &__biggest {
+        margin-bottom: 12em;
+      }
+
+      &__big {
+        font-size: 4.209rem;
+        margin: 0 0 1em 0;
+        line-height: 64px;
+        text-align: left;
+      }
+    
+      &__medium {
+        max-width: 81%;
+        font-size: 3.157rem;
+        line-height: 64px;
+        margin-right: 1em;
+      }
+    
+      &__little {
+        font-size: 2.369rem;
+      }
+    
+      &__gems {
+        width: 37px;
+        margin-left: 0.25em;
+      }
+    }
+    
+    .paragraph__big {
+      font-size: 2.369rem;
+    
+      &__bold {
+        font-size: 2.369rem;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

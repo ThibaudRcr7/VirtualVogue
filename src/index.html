@@ -60,8 +60,8 @@
     <h1 class="title__biggest">// PROJET-TFA</h1>
     <div class="container--scroll">
       <p class="scroll--text">LE PROJET</p>
-      <img src="assets/images/Rectangle-flou.svg" alt="Rectangle penché flou">
-      <img src="assets/images/Arrow-down.svg" alt="Flèche vers le bas">
+      <img class="img__rectangle" src="assets/images/Rectangle-flou.svg" alt="Rectangle penché flou">
+      <img class="img__arrow" src="assets/images/Arrow-down.svg" alt="Flèche vers le bas">
     </div>
   </section>
 
@@ -69,13 +69,22 @@
 
   <section class="sections section--2">
     <div class="container__center">
-      <img src="assets/images/Perso-mobile.svg" alt="Buste personnage techwear">
-      <img id="sec1" src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
-      <h2 class="title__big">UN PROJET EN VOGUE</h2>
-      <div class="title__big__circle">Circle</div>
-    </div>
-      <p class="paragraph__big">Voici la présentation d'un projet novateur qui ouvrira de nouvelles perspectives aux personnes en quête d'un style vestimentaire en adéquation avec leur personnalité.</p>
+      <div class="container__left">
+        <picture>
+          <source media="(min-width: 601px)" srcset="assets/images/Perso-desktop.svg">
+          <img src="assets/images/Perso-mobile.svg" alt="Buste personnage techwear">
+        </picture>
+        <img id="sec1" src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
+      </div>
+      <div class="container__right">
+          <h2 class="title__big">UN PROJET EN VOGUE</h2>
+          <div class="title__big__circle">Circle</div>
+        <p class="paragraph__big">Voici la présentation d'un projet novateur qui ouvrira de nouvelles perspectives aux personnes en quête d'un style vestimentaire en adéquation avec leur personnalité.</p>
+      </div>
       <div class="fade--bottom">Fade-bottom</div>
+      </div>
+
+
     <div class="background--pink">
       <p>Ce projet offre une expérience immersive permettant non seulement de découvrir un style vestimentaire adapté, mais aussi d'explorer de nouveaux horizons et de découvrir des tenues variées. </p>
       <div class="paragraph__big__circle__black">Circle</div>
@@ -98,7 +107,8 @@
       <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
     </div>
         <p>La première étape essentielle entreprise a été de mener des sondages auprès des jeunes, en particulier ceux qui sont attirés par la mode.</p>
-      <div class="decal__text">
+      <div class="container__flex">
+        <div class="decal__text">
         <img src="assets/images/Triangles-line.svg" alt="Ligne-triangle">
         <p class="paragraph__bold paragraph__decal">Cette démarche visait à comprendre leurs besoins, leurs préférences et leurs aspirations en matière de style. Grâce à ces sondages, j'ai pu recueillir des informations précieuses sur les tendances actuelles, les influences culturelles et les attentes des jeunes dans le domaine de la mode.</p>
       </div>
@@ -108,13 +118,13 @@
         <div class="stats__block" id="statsBlock">
           <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
           <svg>
-            <circle cx="115px" cy="115px" r="100px"></circle>
+            <circle cx="115px" cy="115px" r="110px"></circle>
           </svg>
           <p class="stats__block__pourcents">70%</p>
           <p class="stats__block__text">Prennent plus d’une heure à trouver un vêtement</p>
           <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
         </div>
-        
+      </div>
 
     <div class="container__title__medium">
       <h3 class="title__medium">Un problème commun</h3>
@@ -144,20 +154,24 @@
 
 
   <section  id="sec3"  class="sections section--4">
-    <div class="container__center">
-      <h2 class="title__big">UNE SOLUTION ADAPTéE</h2>
-      <div class="title__big__circle">Circle</div>
-        <img src="assets/images/Rectangle-test.svg" alt="Aperçu simulation">
-        <!-- <div class="img__blur">Fond image flou</div> -->
-        <img src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
+    <div class="container__flex">
+      <div class="container__center">
+        <h2 class="title__big">UNE SOLUTION ADAPTéE</h2>
+        <div class="title__big__circle">Circle</div>
+          <img src="assets/images/Rectangle-test.svg" alt="Aperçu simulation">
+          <!-- <div class="img__blur">Fond image flou</div> -->
+          <img class="gems" src="assets/images/Gemme.svg" alt="Gemme rose en forme de losange">
     </div>
-    <div class="container__title__medium">
-      <h3 class="title__medium">Ce que j'avais en tête</h3>
-        <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
-        <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
-        <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
-    </div>
+    <div class="container__right">
+      <div class="container__title__medium">
+        <h3 class="title__medium">Ce que j'avais en tête</h3>
+          <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
+          <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
+          <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
+      </div>
         <p>Au départ, l'objectif était de créer un outil permettant à quiconque de trouver rapidement des vêtements correspondant à son style personnel.</p>
+      </div>
+    </div>
     <div class="container__title__medium">
       <h3 class="title__medium">Recentrer le projet</h3>
       <img class="title__gems" src="assets/images/title-gem.svg" alt="Gemme-titre">
