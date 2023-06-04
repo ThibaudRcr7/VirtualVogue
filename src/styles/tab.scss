@@ -2,10 +2,13 @@
 @import 'components/type';
 @import 'desktop/desktop';
 @import 'desktop/type-desktop';
-@import 'tab';
-@import 'desktop/bigscreen';
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) and (max-width: 1100px){
+
+    .sections {
+        margin-left: 4em;
+        margin-right: 4em;
+      }
 
     .header__nav {
         position: fixed;
@@ -14,7 +17,6 @@
         width: 100%;
         height: 100vh;
         background-color: #18171A;
-        opacity: 0.8;
         display: flex;
         text-align: center;
         align-items: center;
@@ -111,11 +113,12 @@
         .title__big__circle {
             margin-bottom: 2em;
             z-index: -1;
-            top: 52%;
+            top: 76.5%;
+            left: 20%;
             position: absolute;
             transform: rotate(6deg);
             width: 369px;
-            height: 32px;
+            height: 48px;
             border: 1px solid #FF2F61;
             border-radius: 50%;
             background-color: transparent;
@@ -160,7 +163,7 @@
     
         .fade--bottom {
             font-size: 0;
-            width: calc(100% + 32px);
+            width: 100vw;
             margin: 0 -16px;
             height: 32px;
             background-color: #FF2F61;
@@ -170,8 +173,9 @@
     
     
     .background--pink {
-        width: calc(100% + 32px);
-        margin: -16px;
+        width: 100vw;
+        margin-left: -4em;
+        padding-top: 1em;
         margin-bottom: 4em;
         background-color: #FF2F61;
     
@@ -183,25 +187,27 @@
     
     .paragraph__big__circle__black {
         margin: 1em -2em;
+        left: 5%;
         position: absolute;
         font-size: 0;
         border: 1px solid #18171A;
         border-radius: 50%;
         background-color: transparent;
-        width: 412px;
-        height: 200px;
-        transform: rotate(-16deg);
+        width: 612px;
+        height: 120px;
+        transform: rotate(-10deg);
         z-index: 1;
         
         &__2 {
             margin: 1em -2em;
             position: absolute;
+            left: 5%;
             font-size: 0;
             border: 1px solid #18171A;
             border-radius: 50%;
             background-color: transparent;
-            width: 412px;
-            height: 200px;
+            width: 612px;
+            height: 120px;
             transform: rotate(-6deg);
             z-index: 1;
         }
@@ -225,7 +231,7 @@
     
     .paragraph__decal {
         margin-left: 2em;
-        max-width: 291px;
+        max-width: 400px;
     }
     
 
@@ -270,15 +276,16 @@
             font-family: 'Syne', sans-serif;
             font-weight: bold;
             top: 10%;
-            left: 45%;
+            left: 50%;
             transform: translateX(-50%);
             position: absolute;
         }
     
         &__text {
             font-family: 'Syne', sans-serif;
-            left: 40%;
-            transform: translateX(-40%);
+            left: 50%;
+            max-width: 190px;
+            transform: translateX(-50%);
             text-align: center;
             position: absolute;
         }
@@ -295,9 +302,9 @@
         border: 1px solid #FF2F61;
         border-radius: 50%;
         background-color: transparent;
-        width: 369px;
-        height: 180px;
-        transform: rotate(-16deg);
+        width: 620px;
+        height: 100px;
+        transform: rotate(-7deg);
         z-index: 1;
         bottom: 0;
     
@@ -307,8 +314,8 @@
             border: 1px solid #FF2F61;
             border-radius: 50%;
             background-color: transparent;
-            width: 369px;
-            height: 180px;
+            width: 620px;
+            height: 100px;
             transform: rotate(-3deg);
             z-index: 1;
             bottom: 0;
@@ -328,6 +335,7 @@
     
             > *:nth-child(1) {
                 margin-bottom: 2em;
+                max-width: 400px;
             }
     
             > *:nth-child(2) {
@@ -341,7 +349,7 @@
                 background-color: transparent;
                 font-size: 0;
                 top: 0;
-                margin-top: 8%;
+                margin-top: 2%;
             }
     
             > *:nth-child(3) {
@@ -447,11 +455,11 @@
         border: 1px solid #FF2F61;
         border-radius: 50%;
         background-color: transparent;
-        width: 369px;
-        height: 216px;
-        rotate: -7deg;
+        width: 610px;
+        height: 120px;
+        rotate: -3deg;
         z-index: 1;
-        bottom: 15%;
+        bottom: 10%;
         
         &__2 {
             margin: 0 -32px;
@@ -460,11 +468,11 @@
             border: 1px solid #FF2F61;
             border-radius: 50%;
             background-color: transparent;
-            width: 369px;
-            height: 216px;
+            width: 610px;
+            height: 120px;
             rotate: -3deg;
             z-index: 1;
-            bottom: 15%;
+            bottom: 10%;
         }
     }
 
