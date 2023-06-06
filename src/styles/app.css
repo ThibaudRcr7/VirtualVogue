@@ -10,7 +10,7 @@ body {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.333;
-  background-color: #18171A;
+  background-color: #18171a;
   color: white;
   position: relative;
   overflow-x: hidden;
@@ -43,7 +43,10 @@ body::after {
   z-index: -2;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "syne", sans-serif;
 }
 
@@ -76,7 +79,7 @@ a {
   text-align: center;
 }
 .title__big__pink {
-  color: #FF2F61;
+  color: #ff2f61;
 }
 .title__medium {
   max-width: 81%;
@@ -105,6 +108,32 @@ a {
 
 .paragraph__bold {
   font-weight: bold;
+}
+
+#custom-cursor {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(circle, rgba(255, 47, 97, 0.8) 1%, rgba(255, 47, 97, 0) 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.gems {
+  animation: floating 4s ease-in-out infinite;
 }
 
 @media screen and (min-width: 1100px) {
@@ -140,7 +169,7 @@ a {
     position: absolute;
     width: 132px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -191,7 +220,7 @@ a {
     transform: rotate(6deg);
     width: 588px;
     height: 109px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -208,8 +237,8 @@ a {
     margin: 0 -32px;
     width: 100vw;
     height: 64px;
-    background-color: #FF2F61;
-    box-shadow: 0 0 64px #FF2F61;
+    background-color: #ff2f61;
+    box-shadow: 0 0 64px #ff2f61;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -253,7 +282,7 @@ a {
     height: 100vh;
     margin: -32px;
     margin-bottom: 4em;
-    background-color: #FF2F61;
+    background-color: #ff2f61;
   }
   .background--pink p {
     padding-top: 2em;
@@ -265,7 +294,7 @@ a {
     left: 6%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -279,7 +308,7 @@ a {
     left: 6%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -327,7 +356,7 @@ a {
   }
   svg circle {
     fill: none;
-    stroke: #FF2F61;
+    stroke: #ff2f61;
     stroke-width: 16px;
     transform: translate(5px, 5px);
     stroke-dasharray: 628;
@@ -378,7 +407,7 @@ a {
     top: 8%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -392,7 +421,7 @@ a {
     top: 8%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -402,7 +431,7 @@ a {
     bottom: 0;
   }
   .gems {
-    width: 32px;
+    width: 64px;
   }
   .barcode {
     height: 64px;
@@ -440,7 +469,7 @@ a {
     rotate: -6deg;
     width: 550px;
     height: 82px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -471,14 +500,14 @@ a {
     rotate: 6deg;
     width: 320px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
   }
   .section--4 .title__little__circle__2 {
     height: 24px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -497,7 +526,7 @@ a {
     position: absolute;
     width: 248px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -540,7 +569,7 @@ a {
     rotate: 6deg;
     width: 550px;
     height: 48px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -549,7 +578,7 @@ a {
     margin: 0px -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -562,7 +591,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -601,7 +630,7 @@ a {
     margin-left: 33.5%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -614,7 +643,7 @@ a {
     margin-left: -34%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -629,7 +658,155 @@ a {
     bottom: 0;
   }
   .planet__background {
+    z-index: -1;
     width: 800px;
+  }
+  #arrow-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+  }
+  #arrow-container:hover {
+    background-color: #ff2f61;
+  }
+  #arrow-container #arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  #arrow-container.clicked #arrow {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  .section--ui .container__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title__little__circle {
+    z-index: -1;
+    margin-left: 0.5em;
+    margin-top: -85px;
+    position: absolute;
+    rotate: 6deg;
+    width: 320px;
+    height: 32px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+  }
+  .title__little__circle__2 {
+    height: 24px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+    width: 124px;
+    z-index: -1;
+    margin-left: 2px;
+    margin-top: -85px;
+    position: absolute;
+    rotate: 6deg;
+  }
+  .section--ui .title__little__circle {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .section--ui h1 {
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  .section--ui h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .section--ui h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .section--ui h4 {
+    margin-top: 1em;
+    padding: 0;
+  }
+  .color__square {
+    margin-top: 5%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-bottom: 1em;
+  }
+  .color__square :nth-child(1) {
+    width: 64px;
+    height: 64px;
+    background-color: #ff2f61;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(2) {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(3) {
+    width: 64px;
+    height: 64px;
+    background-color: #18171a;
+    border-radius: 5%;
+  }
+  .color__square > div {
+    width: 64px;
+    height: 64px;
+    border-radius: 5%;
+    position: relative;
+  }
+  .color__square > div::after {
+    content: attr(data-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .color__square > div:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .section--ui .container__flex {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+  .nav__credits {
+    list-style: none;
+    margin-bottom: 4em;
+  }
+  .nav__credits__el {
+    margin-bottom: 1em;
+    font-size: 1.777rem;
+  }
+  .section--cred img {
+    margin-left: 4em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -681,7 +858,7 @@ body {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.333;
-  background-color: #18171A;
+  background-color: #18171a;
   color: white;
   position: relative;
   overflow-x: hidden;
@@ -714,7 +891,10 @@ body::after {
   z-index: -2;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "syne", sans-serif;
 }
 
@@ -747,7 +927,7 @@ a {
   text-align: center;
 }
 .title__big__pink {
-  color: #FF2F61;
+  color: #ff2f61;
 }
 .title__medium {
   max-width: 81%;
@@ -776,6 +956,32 @@ a {
 
 .paragraph__bold {
   font-weight: bold;
+}
+
+#custom-cursor {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(circle, rgba(255, 47, 97, 0.8) 1%, rgba(255, 47, 97, 0) 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.gems {
+  animation: floating 4s ease-in-out infinite;
 }
 
 @media screen and (min-width: 1100px) {
@@ -811,7 +1017,7 @@ a {
     position: absolute;
     width: 132px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -862,7 +1068,7 @@ a {
     transform: rotate(6deg);
     width: 588px;
     height: 109px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -879,8 +1085,8 @@ a {
     margin: 0 -32px;
     width: 100vw;
     height: 64px;
-    background-color: #FF2F61;
-    box-shadow: 0 0 64px #FF2F61;
+    background-color: #ff2f61;
+    box-shadow: 0 0 64px #ff2f61;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -924,7 +1130,7 @@ a {
     height: 100vh;
     margin: -32px;
     margin-bottom: 4em;
-    background-color: #FF2F61;
+    background-color: #ff2f61;
   }
   .background--pink p {
     padding-top: 2em;
@@ -936,7 +1142,7 @@ a {
     left: 6%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -950,7 +1156,7 @@ a {
     left: 6%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -998,7 +1204,7 @@ a {
   }
   svg circle {
     fill: none;
-    stroke: #FF2F61;
+    stroke: #ff2f61;
     stroke-width: 16px;
     transform: translate(5px, 5px);
     stroke-dasharray: 628;
@@ -1049,7 +1255,7 @@ a {
     top: 8%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -1063,7 +1269,7 @@ a {
     top: 8%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -1073,7 +1279,7 @@ a {
     bottom: 0;
   }
   .gems {
-    width: 32px;
+    width: 64px;
   }
   .barcode {
     height: 64px;
@@ -1111,7 +1317,7 @@ a {
     rotate: -6deg;
     width: 550px;
     height: 82px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1142,14 +1348,14 @@ a {
     rotate: 6deg;
     width: 320px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
   }
   .section--4 .title__little__circle__2 {
     height: 24px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1168,7 +1374,7 @@ a {
     position: absolute;
     width: 248px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1211,7 +1417,7 @@ a {
     rotate: 6deg;
     width: 550px;
     height: 48px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1220,7 +1426,7 @@ a {
     margin: 0px -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -1233,7 +1439,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -1272,7 +1478,7 @@ a {
     margin-left: 33.5%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -1285,7 +1491,7 @@ a {
     margin-left: -34%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -1300,7 +1506,155 @@ a {
     bottom: 0;
   }
   .planet__background {
+    z-index: -1;
     width: 800px;
+  }
+  #arrow-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+  }
+  #arrow-container:hover {
+    background-color: #ff2f61;
+  }
+  #arrow-container #arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  #arrow-container.clicked #arrow {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  .section--ui .container__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title__little__circle {
+    z-index: -1;
+    margin-left: 0.5em;
+    margin-top: -85px;
+    position: absolute;
+    rotate: 6deg;
+    width: 320px;
+    height: 32px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+  }
+  .title__little__circle__2 {
+    height: 24px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+    width: 124px;
+    z-index: -1;
+    margin-left: 2px;
+    margin-top: -85px;
+    position: absolute;
+    rotate: 6deg;
+  }
+  .section--ui .title__little__circle {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .section--ui h1 {
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  .section--ui h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .section--ui h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .section--ui h4 {
+    margin-top: 1em;
+    padding: 0;
+  }
+  .color__square {
+    margin-top: 5%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-bottom: 1em;
+  }
+  .color__square :nth-child(1) {
+    width: 64px;
+    height: 64px;
+    background-color: #ff2f61;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(2) {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(3) {
+    width: 64px;
+    height: 64px;
+    background-color: #18171a;
+    border-radius: 5%;
+  }
+  .color__square > div {
+    width: 64px;
+    height: 64px;
+    border-radius: 5%;
+    position: relative;
+  }
+  .color__square > div::after {
+    content: attr(data-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .color__square > div:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .section--ui .container__flex {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+  .nav__credits {
+    list-style: none;
+    margin-bottom: 4em;
+  }
+  .nav__credits__el {
+    margin-bottom: 1em;
+    font-size: 1.777rem;
+  }
+  .section--cred img {
+    margin-left: 4em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1355,7 +1709,7 @@ a {
     right: 0;
     width: 100%;
     height: 100vh;
-    background-color: #18171A;
+    background-color: #18171a;
     display: flex;
     text-align: center;
     align-items: center;
@@ -1442,7 +1796,7 @@ a {
     transform: rotate(6deg);
     width: 369px;
     height: 48px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1482,15 +1836,15 @@ a {
     width: 100vw;
     margin: 0 -16px;
     height: 32px;
-    background-color: #FF2F61;
-    box-shadow: 0 0 32px #FF2F61;
+    background-color: #ff2f61;
+    box-shadow: 0 0 32px #ff2f61;
   }
   .background--pink {
     width: 100vw;
     margin-left: -4em;
     padding-top: 1em;
     margin-bottom: 4em;
-    background-color: #FF2F61;
+    background-color: #ff2f61;
   }
   .background--pink p {
     margin-left: 1em;
@@ -1501,7 +1855,7 @@ a {
     left: 5%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 612px;
@@ -1514,7 +1868,7 @@ a {
     position: absolute;
     left: 5%;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 612px;
@@ -1552,7 +1906,7 @@ a {
   }
   svg circle {
     fill: none;
-    stroke: #FF2F61;
+    stroke: #ff2f61;
     stroke-width: 16px;
     transform: translate(5px, 5px);
     stroke-dasharray: 628;
@@ -1594,7 +1948,7 @@ a {
   .paragraph__big__circle {
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 620px;
@@ -1606,7 +1960,7 @@ a {
   .paragraph__big__circle__2 {
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 620px;
@@ -1636,7 +1990,7 @@ a {
     transform: rotate(6deg);
     width: 369px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1659,14 +2013,14 @@ a {
     transform: rotate(6deg);
     width: 132px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
   }
   .title__little__circle__2 {
     height: 24px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1685,7 +2039,7 @@ a {
     position: absolute;
     width: 248px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1721,7 +2075,7 @@ a {
     rotate: 6deg;
     width: 369px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1730,7 +2084,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 610px;
@@ -1743,7 +2097,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 610px;
@@ -1781,7 +2135,7 @@ a {
     margin-left: 34%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -1794,7 +2148,7 @@ a {
     margin-left: -38%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -1807,6 +2161,123 @@ a {
     width: 200px;
     position: absolute;
     bottom: 0;
+  }
+  #arrow-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+  }
+  #arrow-container:hover {
+    background-color: #ff2f61;
+  }
+  #arrow-container #arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  #arrow-container.clicked #arrow {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  .section--ui .container__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section--ui .title__little__circle {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .section--ui h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .section--ui h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .section--ui h4 {
+    margin-top: 1em;
+    padding: 0;
+  }
+  .color__square {
+    margin-top: 5%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-bottom: 1em;
+  }
+  .color__square :nth-child(1) {
+    width: 64px;
+    height: 64px;
+    background-color: #ff2f61;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(2) {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(3) {
+    width: 64px;
+    height: 64px;
+    background-color: #18171a;
+    border-radius: 5%;
+  }
+  .color__square > div {
+    width: 64px;
+    height: 64px;
+    border-radius: 5%;
+    position: relative;
+  }
+  .color__square > div::after {
+    content: attr(data-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .color__square > div:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .section--ui .container__flex {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+  .nav__credits {
+    list-style: none;
+    margin-bottom: 4em;
+  }
+  .nav__credits__el {
+    margin-bottom: 1em;
+    font-size: 1.333rem;
+  }
+  .section--cred img {
+    margin-left: 4em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1842,7 +2313,7 @@ a {
     position: absolute;
     width: 132px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1893,7 +2364,7 @@ a {
     transform: rotate(6deg);
     width: 588px;
     height: 109px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -1910,8 +2381,8 @@ a {
     margin: 0 -32px;
     width: 100vw;
     height: 64px;
-    background-color: #FF2F61;
-    box-shadow: 0 0 64px #FF2F61;
+    background-color: #ff2f61;
+    box-shadow: 0 0 64px #ff2f61;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1955,7 +2426,7 @@ a {
     height: 100vh;
     margin: -32px;
     margin-bottom: 4em;
-    background-color: #FF2F61;
+    background-color: #ff2f61;
   }
   .background--pink p {
     padding-top: 2em;
@@ -1967,7 +2438,7 @@ a {
     left: 6%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -1981,7 +2452,7 @@ a {
     left: 6%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -2029,7 +2500,7 @@ a {
   }
   svg circle {
     fill: none;
-    stroke: #FF2F61;
+    stroke: #ff2f61;
     stroke-width: 16px;
     transform: translate(5px, 5px);
     stroke-dasharray: 628;
@@ -2080,7 +2551,7 @@ a {
     top: 8%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -2094,7 +2565,7 @@ a {
     top: 8%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -2104,7 +2575,7 @@ a {
     bottom: 0;
   }
   .gems {
-    width: 32px;
+    width: 64px;
   }
   .barcode {
     height: 64px;
@@ -2142,7 +2613,7 @@ a {
     rotate: -6deg;
     width: 550px;
     height: 82px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -2173,14 +2644,14 @@ a {
     rotate: 6deg;
     width: 320px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
   }
   .section--4 .title__little__circle__2 {
     height: 24px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -2199,7 +2670,7 @@ a {
     position: absolute;
     width: 248px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -2242,7 +2713,7 @@ a {
     rotate: 6deg;
     width: 550px;
     height: 48px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -2251,7 +2722,7 @@ a {
     margin: 0px -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -2264,7 +2735,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 1100px;
@@ -2303,7 +2774,7 @@ a {
     margin-left: 33.5%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -2316,7 +2787,7 @@ a {
     margin-left: -34%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -2331,7 +2802,155 @@ a {
     bottom: 0;
   }
   .planet__background {
+    z-index: -1;
     width: 800px;
+  }
+  #arrow-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+  }
+  #arrow-container:hover {
+    background-color: #ff2f61;
+  }
+  #arrow-container #arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  #arrow-container.clicked #arrow {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  .section--ui .container__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title__little__circle {
+    z-index: -1;
+    margin-left: 0.5em;
+    margin-top: -85px;
+    position: absolute;
+    rotate: 6deg;
+    width: 320px;
+    height: 32px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+  }
+  .title__little__circle__2 {
+    height: 24px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+    width: 124px;
+    z-index: -1;
+    margin-left: 2px;
+    margin-top: -85px;
+    position: absolute;
+    rotate: 6deg;
+  }
+  .section--ui .title__little__circle {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .section--ui h1 {
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  .section--ui h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .section--ui h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .section--ui h4 {
+    margin-top: 1em;
+    padding: 0;
+  }
+  .color__square {
+    margin-top: 5%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-bottom: 1em;
+  }
+  .color__square :nth-child(1) {
+    width: 64px;
+    height: 64px;
+    background-color: #ff2f61;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(2) {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(3) {
+    width: 64px;
+    height: 64px;
+    background-color: #18171a;
+    border-radius: 5%;
+  }
+  .color__square > div {
+    width: 64px;
+    height: 64px;
+    border-radius: 5%;
+    position: relative;
+  }
+  .color__square > div::after {
+    content: attr(data-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .color__square > div:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .section--ui .container__flex {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+  .nav__credits {
+    list-style: none;
+    margin-bottom: 4em;
+  }
+  .nav__credits__el {
+    margin-bottom: 1em;
+    font-size: 1.777rem;
+  }
+  .section--cred img {
+    margin-left: 4em;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -2688,7 +3307,7 @@ a {
     right: 0;
     width: 100%;
     height: 100vh;
-    background-color: #18171A;
+    background-color: #18171a;
     opacity: 0.8;
     display: flex;
     text-align: center;
@@ -2775,7 +3394,7 @@ a {
     transform: rotate(6deg);
     width: 369px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -2815,14 +3434,14 @@ a {
     width: calc(100% + 32px);
     margin: 0 -16px;
     height: 32px;
-    background-color: #FF2F61;
-    box-shadow: 0 0 32px #FF2F61;
+    background-color: #ff2f61;
+    box-shadow: 0 0 32px #ff2f61;
   }
   .background--pink {
     width: calc(100% + 32px);
     margin: -16px;
     margin-bottom: 4em;
-    background-color: #FF2F61;
+    background-color: #ff2f61;
   }
   .background--pink p {
     margin-left: 1em;
@@ -2832,7 +3451,7 @@ a {
     margin: 1em -2em;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 412px;
@@ -2844,7 +3463,7 @@ a {
     margin: 1em -2em;
     position: absolute;
     font-size: 0;
-    border: 1px solid #18171A;
+    border: 1px solid #18171a;
     border-radius: 50%;
     background-color: transparent;
     width: 412px;
@@ -2882,7 +3501,7 @@ a {
   }
   svg circle {
     fill: none;
-    stroke: #FF2F61;
+    stroke: #ff2f61;
     stroke-width: 16px;
     transform: translate(5px, 5px);
     stroke-dasharray: 628;
@@ -2923,7 +3542,7 @@ a {
   .paragraph__big__circle {
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 369px;
@@ -2935,7 +3554,7 @@ a {
   .paragraph__big__circle__2 {
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 369px;
@@ -2964,7 +3583,7 @@ a {
     transform: rotate(6deg);
     width: 369px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -2987,14 +3606,14 @@ a {
     transform: rotate(6deg);
     width: 132px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
   }
   .title__little__circle__2 {
     height: 24px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -3013,7 +3632,7 @@ a {
     position: absolute;
     width: 248px;
     height: 16px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -3049,7 +3668,7 @@ a {
     rotate: 6deg;
     width: 369px;
     height: 32px;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     font-size: 0;
@@ -3058,7 +3677,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 369px;
@@ -3071,7 +3690,7 @@ a {
     margin: 0 -32px;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 369px;
@@ -3109,7 +3728,7 @@ a {
     margin-left: 34%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -3122,7 +3741,7 @@ a {
     margin-left: -38%;
     position: absolute;
     font-size: 0;
-    border: 1px solid #FF2F61;
+    border: 1px solid #ff2f61;
     border-radius: 50%;
     background-color: transparent;
     width: 54px;
@@ -3135,5 +3754,122 @@ a {
     width: 200px;
     position: absolute;
     bottom: 0;
+  }
+  #arrow-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff2f61;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+  }
+  #arrow-container:hover {
+    background-color: #ff2f61;
+  }
+  #arrow-container #arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  #arrow-container.clicked #arrow {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  .section--ui .container__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section--ui .title__little__circle {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .section--ui h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .section--ui h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .section--ui h4 {
+    margin-top: 1em;
+    padding: 0;
+  }
+  .color__square {
+    margin-top: 5%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-bottom: 1em;
+  }
+  .color__square :nth-child(1) {
+    width: 64px;
+    height: 64px;
+    background-color: #ff2f61;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(2) {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  .color__square :nth-child(3) {
+    width: 64px;
+    height: 64px;
+    background-color: #18171a;
+    border-radius: 5%;
+  }
+  .color__square > div {
+    width: 64px;
+    height: 64px;
+    border-radius: 5%;
+    position: relative;
+  }
+  .color__square > div::after {
+    content: attr(data-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .color__square > div:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .section--ui .container__flex {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+  .nav__credits {
+    list-style: none;
+    margin-bottom: 4em;
+  }
+  .nav__credits__el {
+    margin-bottom: 1em;
+    font-size: 1.333rem;
+  }
+  .section--cred img {
+    margin-left: 4em;
   }
 }/*# sourceMappingURL=app.css.map */

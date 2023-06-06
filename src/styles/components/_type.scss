@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/cbm5vkp.css");
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
 
 body {
   margin: 0;
@@ -9,42 +9,45 @@ body {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.333;
-  background-color: #18171A;
+  background-color: #18171a;
   color: white;
   position: relative;
   overflow-x: hidden;
   width: 100%;
 
-    &::before{
-      content: "";
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background-repeat: repeat;
-      background-image: url("../assets/images/grille-background.png");
-      opacity: 0.2;
-      z-index: -1;
-    }
-
-    &::after{
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      background-repeat: repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-image: url("../assets/images/fond.png");
-      opacity: 0.3;
-      z-index: -2;
-    }
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: repeat;
+    background-image: url("../assets/images/grille-background.png");
+    opacity: 0.2;
+    z-index: -1;
   }
 
-h1,h2,h3,h4 {
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../assets/images/fond.png");
+    opacity: 0.3;
+    z-index: -2;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: "syne", sans-serif;
 }
 
@@ -78,7 +81,7 @@ a {
     text-align: center;
 
     &__pink {
-      color: #FF2F61;
+      color: #ff2f61;
     }
   }
 
@@ -108,9 +111,39 @@ a {
     font-size: 1.333rem;
     z-index: 2;
     font-weight: bold;
-
   }
 }
 .paragraph__bold {
   font-weight: bold;
+}
+
+#custom-cursor {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 47, 97, 0.8) 1%,
+    rgba(255, 47, 97, 0) 80%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.gems {
+  animation: floating 4s ease-in-out infinite;
 }
