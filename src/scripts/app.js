@@ -6,6 +6,8 @@ import {
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 
+// Anim Cercle Pourcentage
+
 gsap.registerPlugin(ScrollTrigger);
 
 const circle = document.querySelector("svg circle");
@@ -21,6 +23,8 @@ gsap.to(circle, {
 	}
 });
 
+// Curseur custom
+
 var customCursor = document.getElementById('custom-cursor');
 
 document.addEventListener('mousemove', function(e) {
@@ -34,6 +38,9 @@ document.addEventListener('mousemove', function(e) {
 });
 
 
+
+// Burger Menu
+
 const openburger = document.querySelector(".header__nav--burger");
 const closeburger = document.querySelector(".header__nav--closeburger");
 
@@ -46,6 +53,10 @@ closeburger.addEventListener("click", () => {
 
 	document.querySelector(".header__nav").classList.remove("open");
 });
+
+
+
+// Flèche retour en haut
 
 const arrowContainer = document.getElementById('arrow-container');
 
